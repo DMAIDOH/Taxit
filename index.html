@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="taxit.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>TaxIt</title>
+    </head>
+
+    <body>
+        <!--section1-->
+        <!--header-->
+        <section id = "sectionOne">
+            <div id = "pageheader">
+                <span class="website-name">TaxIt</span>
+                <span id="title">USA Income Tax Calculator</span>
+                <span class="website-name">$$$</span>
+            </div>
+
+            <!--enter your salary...-->
+            <div id = "enter-instruction">
+                Estimate your salary after taxes
+            </div>
+            
+            <!--salary, per & state selections-->
+            <div id = "input-values">
+                <!--salary input-->
+                <div class="">
+                    <input>
+                    <div>salary</div>
+                </div>
+
+                <!--"per" dropdown options-->
+                <div class="">
+                    <select name="per">
+                        <option value="annual">Annual</option>
+                        <option value="month">Month</option>
+                        <option value="biweekly">Biweekly</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="day">Day</option>
+                        <option value="hour">Hour</option>
+                    </select>
+                    <div>per</div>
+                </div>
+
+                <!--state dropdown-->
+                <div class="">
+                    <select name="bystate">
+                        <option>Alabama</option>
+                        <option>Alaska</option>
+                        <option>Arizona</option>
+                        <option>Arkansas</option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware</option>
+                        <option>Florida</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho</option>
+                        <option>Illinois</option>
+                        <option>Indiana</option>
+                        <option>Iowa</option>
+                        <option>Kansas</option>
+                        <option>Kentucky</option>
+                        <option>Louisiana</option>
+                        <option>Maine</option>
+                        <option>Maryland</option>
+                        <option>Massachusetts</option>
+                        <option>Michigan</option>
+                        <option>Minnesota</option>
+                        <option>Mississippi</option>
+                        <option>Missouri</option>
+                        <option>Montana</option>
+                        <option>Nebraska</option>
+                        <option>Nevada</option>
+                        <option>New Hampshire</option>
+                        <option>New Jersey</option>
+                        <option>New Mexico</option>
+                        <option>New York</option>
+                        <option>North Carolina</option>
+                        <option>North Dakota</option>
+                        <option>Ohio</option>
+                        <option>Oklahoma</option>
+                        <option>Oregon</option>
+                        <option>Pennsylvania</option>
+                        <option>Rhode Island</option>
+                        <option>South Carolina</option>
+                        <option>South Dakota</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Utah</option>
+                        <option>Vermont</option>
+                        <option>Virginia</option>
+                        <option>Washington</option>
+                        <option>West Virginia</option>
+                        <option>Wisconsin</option>
+                        <option>Wyoming</option>
+                    </select>
+                    <div>state</div>
+                </div>
+            </div>
+
+            <!--calculate button-->
+            <div>
+                <button type="button">Calculate</button>
+            </div>
+            <!--end of section1-->
+        </section>
+
+        <!--section2-->
+        <!--filtered view-->
+        <div id = "">
+            <span id="view-by">view by:</span>
+            <span class="per-filter"><button id ="viewyr">year</button></span>
+            <span class="per-filter"><button id ="viewmonth">month</button></span>
+            <span class="per-filter"><button id ="viewbiweekly">biweekly</button></span>
+            <span class="per-filter"><button id ="viewweekly">weekly</button></span>
+            <span class="per-filter"><button id ="viewdaily">daily</button></span>
+            <span class="per-filter"><button id ="viewhrly">hourly</button></span>
+        </div>
+
+        <!--results-->
+        <div id="results">
+            <!--box 1-->
+            <span id="resultboxOne">
+                <div>
+                    SALARY
+                </div>
+                <div>
+                    TOTAL TAX
+                </div>
+                <div>
+                    NET PAY
+                </div>
+            </span>
+
+            <!--box 2-->
+            <span id="resultboxTwo">
+                <div>WITHHOLDINGS</div>
+                <div>Federal Income Tax</div>
+                <div>State Income Tax</div>
+                <div>Social Security</div>
+                <div>Medicare</div>
+                <div>Other</div>
+            </span>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div id="footer">
+                <p id="footer-text"></p>
+            </div>
+        </footer>
+
+    <script type="text/javascript" scr="taxit.js"></script>
+    </body>
+</html>

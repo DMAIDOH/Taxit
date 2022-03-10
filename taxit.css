@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height:100%;
+    width:100%;
+    margin:0;
+    background-color: #5ADA67;
+}
+
+/*curved header of section 1*/
+#sectionOne{
+    background-color: #FFFFFF;
+    border-radius: 0 0 100% 100%;
+    width:100%;
+    transform: scaleX(1.1);
+}
+
+/*header*/
+#pageheader{
+    font-size: 4vh;
+    margin-left:7%;
+    font-weight: bold;
+}
+
+.website-name{
+    color:#5ADA67;
+}
+
+#title{
+    color:#31803D
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #31803D;
+    height: 7%;
+  }
